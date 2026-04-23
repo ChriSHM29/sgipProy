@@ -2,13 +2,20 @@ package com.metroica.sgip_backend.mapper.inteligencia;
 
 import com.metroica.sgip_backend.dto.response.MovimientoExportDTO;
 import com.metroica.sgip_backend.model.operativas.InventarioMovimiento;
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.MappingConstants;
+import org.springframework.stereotype.Component;
 
-@Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
-public interface MovimientoExportMapper {
+@Component
+public class MovimientoExportMapper {
 
-    @Mapping(source = "producto.id", target = "productoId")
-    MovimientoExportDTO toDTO(InventarioMovimiento movimiento);
+    public MovimientoExportDTO toDTO(InventarioMovimiento movimiento) {
+        MovimientoExportDTO dto = new MovimientoExportDTO();
+
+        dto.setProductoId(movimiento.getProducto().getId());
+        // Agregamos la extracción del nombre navegando por la relación JPA
+        dto.setProductoNombre(movimiento.getProducto().getNombre());
+
+        dto.setCantidad(movimiento.getCantidad());
+        dto.setFecha(movimiento.getFecha());
+        return dto;
+    }
 }

@@ -1,4 +1,4 @@
-package com.metroica.sgip_backend.repository.operativo;
+package com.metroica.sgip_backend.repository.operativas;
 
 import com.metroica.sgip_backend.model.operativas.Categoria;
 import org.springframework.data.jpa.repository.JpaRepository;

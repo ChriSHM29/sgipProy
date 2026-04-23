@@ -3,7 +3,7 @@ package com.metroica.sgip_backend.service.inteligencia;
 import com.metroica.sgip_backend.dto.response.MovimientoExportDTO;
 import com.metroica.sgip_backend.mapper.inteligencia.MovimientoExportMapper;
 import com.metroica.sgip_backend.model.enums.TipoMovimiento;
-import com.metroica.sgip_backend.repository.operativo.InventarioMovimientoRepository;
+import com.metroica.sgip_backend.repository.operativas.InventarioMovimientoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

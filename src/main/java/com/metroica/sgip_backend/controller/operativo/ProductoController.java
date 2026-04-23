@@ -1,4 +1,4 @@
-package com.metroica.sgip_backend.controller;
+package com.metroica.sgip_backend.controller.operativo;
 
 import com.metroica.sgip_backend.dto.response.ProductoResponseDTO;
 import com.metroica.sgip_backend.service.operativas.ProductoService;

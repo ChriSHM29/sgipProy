@@ -9,5 +9,6 @@ public class MovimientoExportDTO {
     private UUID productoId;
     private Integer cantidad;
     private LocalDateTime fecha;
+    private String productoNombre;
     // Solo enviamos 3 datos. Pandas se encargará del resto en Python.
 }

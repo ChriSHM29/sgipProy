@@ -2,7 +2,7 @@ package com.metroica.sgip_backend.service.operativas;
 
 import com.metroica.sgip_backend.dto.response.ProductoResponseDTO;
 import com.metroica.sgip_backend.mapper.operativas.ProductoMapper;
-import com.metroica.sgip_backend.repository.operativo.ProductoRepository;
+import com.metroica.sgip_backend.repository.operativas.ProductoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
